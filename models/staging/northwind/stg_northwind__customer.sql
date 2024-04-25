@@ -1,25 +1,25 @@
 with
 
-    source as (select * from {{ source("northwind", "customer") }}),
+source as (select * from {{ source("northwind", "customer") }}),
 
-    renamed as (
+renamed as (
 
-        select
-            id,
-            companyname,
-            contactname,
-            contacttitle,
-            address,
-            city,
-            region,
-            postalcode,
-            country,
-            phone,
-            fax
+    select
+        id,
+        companyname,
+        contactname,
+        contacttitle,
+        address,
+        city,
+        region,
+        postalcode,
+        country,
+        phone,
+        fax
 
-        from source
+    from source
 
-    )
+)
 
 select *
 from renamed
