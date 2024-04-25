@@ -6,3 +6,5 @@ sources:
     tables:
       - name: _order_
       - name: customer
+      - name: orderdetail
+      - name: product
